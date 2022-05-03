@@ -46,6 +46,7 @@
             <div class="conteiner">
             <h1 class="main-title-text">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="mane-btn" data-modal-open>Заказать услугу</button>
+    
     </div>
     </section>
         <!-- peculiar -->
@@ -366,8 +367,58 @@
             <use href="./images/symbol-defs.svg#icon-Vector"></use>
         </svg>
     </button>
+    <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+    <form >
+        <div class="modal-field">
+        <label class="modal-label" for="user-name">Имя</label>
+<input 
+type="text" 
+class="modal-input" 
+name="user-name" 
+placeholder="Введите имя"
+required
+id="user-name"
+/>
+</div>
+<div class="modal-field">
+<label class="modal-label" for="user-tel">Телефон</label>
+<input 
+type="tel" 
+class="modal-input"
+ name="user-tel" 
+ id="user-tel"
+ placeholder="Введите номер телефона"
+ required
+title="+380"
+ />
+</div>
+ <div class="modal-field">
+ <label class="modal-label" for="user-mail">Почта</label>
+<input 
+type="email" 
+class="modal-input" 
+name="user-mail"
+id="user-mail"
+placeholder="Введите адрес электронной почты" />
+</div>
+<div class="modal-field">
+    <label class="modal-label" for="user-text">Комментарий</label>
+   <textarea 
+   name="user-text" 
+   id="user-text" 
+   placeholder="Введите текст" 
+   class="modal-text"></textarea>
+   </div>
+    </form>
+    <label class="checkbox">
+        <input type="checkbox" name="agree" value="agree" checked />
+        <span class="agree">Соглашаюсь с рассылкой и принимаю</span><a><span class="agreement"> Условия договора</span></a> 
+      </label>
+    <button type="submit" class="modal-submit-btn">Отправить</button>
+
 </div>
     </div>
     <script src="./js/modal.js"></script>
+
 </body>
 </html>
