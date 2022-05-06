@@ -1056,7 +1056,31 @@ display: flex;
 align-items: center;
 }
 
-.check-text::before {
+.check-icon {
+  fill: transparent;
+}
+
+.input-check:checked + .check-text span {
+background-color: var(--accent);
+border: none;
+}
+
+.input-check:checked + .check-text .check-icon {
+fill: var(--white);
+}
+
+.check-text span {
+  width: 16px;
+height: 15px;
+border: 2px solid #000000;
+border-radius: 3px;
+margin-right: 7px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* .check-text::before {
 content: '';
 width: 16px;
 height: 15px;
@@ -1064,6 +1088,14 @@ border: 2px solid #000000;
 border-radius: 3px;
 margin-right: 7px;
 }
+
+.input-check:checked + .check-text::before {
+background-color: var(--accent);
+border: none;
+background-image: url(../images/icons/Vector\ \(4\).svg);
+background-repeat: no-repeat;
+background-position: center;
+} */
 
 .agree {
 font-weight: 400;
