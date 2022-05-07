@@ -679,6 +679,11 @@ margin-bottom: 20px;
 }
 
 /* ----- Футер Подписка------ */
+.subscription-box {
+  display: flex;
+  margin-top: 20px;
+}
+
 .subscription-form {
   margin-left: 93px;
 }
@@ -698,12 +703,12 @@ color: #FFFFFF;
 }
 
 .subscription-input {
-  margin-top: 20px;
   min-width: 358px;
   height: 50px;
   box-sizing: border-box;
   outline: none;
   margin-right: 12px;
+  padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
@@ -718,7 +723,6 @@ display: flex;
 align-items: center;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
-padding-left: 16px;
 
 }
 
@@ -994,21 +998,7 @@ letter-spacing: 0.01em;
 color: #757575;
 }
 
-.check-icon-hover {
-  display: none;
-}
 
-.check-icon-hover {
-  display: block;
-}
-
-.check-icon {
-  position: absolute;
-}
-
-.check-icon-hover {
-  position: relative;
-}
 
 .modal-submit-btn {
   font-family: inherit;
@@ -1054,67 +1044,35 @@ letter-spacing: 0.03em;
 color: #757575;
 display: flex;
 align-items: center;
-}
-
-.check-icon {
-  fill: transparent;
-}
-
-.input-check:checked + .check-text span {
-background-color: var(--accent);
-border: none;
-}
-
-.input-check:checked + .check-text .check-icon {
-fill: var(--white);
-}
-
-.check-text span {
-  width: 16px;
-height: 15px;
-border: 2px solid #000000;
-border-radius: 3px;
-margin-right: 7px;
-display: flex;
-align-items: center;
 justify-content: center;
 }
 
-/* .check-text::before {
-content: '';
-width: 16px;
-height: 15px;
-border: 2px solid #000000;
-border-radius: 3px;
-margin-right: 7px;
+.check-text::before {
+  content: '';
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  margin-right: 8px;
 }
 
 .input-check:checked + .check-text::before {
-background-color: var(--accent);
-border: none;
-background-image: url(../images/icons/Vector\ \(4\).svg);
-background-repeat: no-repeat;
-background-position: center;
-} */
-
-.agree {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: #757575;
-
+  background-color: var(--accent);
+  border: none;
+  background-image: url(../images/icons/Vector\ \(4\).svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.agreement {
-  font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-text-decoration-line: underline;
-color: #2196F3;
-cursor: pointer;
+.input-check:checked :hover,
+.input-check:checked :focus {
+  transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+
+
+
+
 
 
 
